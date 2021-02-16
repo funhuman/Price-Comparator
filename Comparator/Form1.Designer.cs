@@ -35,11 +35,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.priceBoxB = new System.Windows.Forms.TextBox();
             this.weightBoxB = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.priceBoxB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,8 @@
             this.priceBoxA.Name = "priceBoxA";
             this.priceBoxA.Size = new System.Drawing.Size(129, 26);
             this.priceBoxA.TabIndex = 0;
+            this.priceBoxA.TextChanged += new System.EventHandler(this.priceBoxB_TextChanged);
+            this.priceBoxA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceBox_KeyPress);
             // 
             // weightBoxA
             // 
@@ -61,6 +63,8 @@
             this.weightBoxA.Name = "weightBoxA";
             this.weightBoxA.Size = new System.Drawing.Size(129, 26);
             this.weightBoxA.TabIndex = 1;
+            this.weightBoxA.TextChanged += new System.EventHandler(this.weightBoxB_TextChanged);
+            this.weightBoxA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceBox_KeyPress);
             // 
             // title
             // 
@@ -103,6 +107,18 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Price";
             // 
+            // weightBoxB
+            // 
+            this.weightBoxB.Font = new System.Drawing.Font("Consolas", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weightBoxB.Location = new System.Drawing.Point(66, 83);
+            this.weightBoxB.MaxLength = 13;
+            this.weightBoxB.Name = "weightBoxB";
+            this.weightBoxB.ReadOnly = true;
+            this.weightBoxB.Size = new System.Drawing.Size(129, 26);
+            this.weightBoxB.TabIndex = 3;
+            this.weightBoxB.TextChanged += new System.EventHandler(this.weightBoxB_TextChanged);
+            this.weightBoxB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceBox_KeyPress);
+            // 
             // priceBoxB
             // 
             this.priceBoxB.Font = new System.Drawing.Font("Consolas", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,16 +128,25 @@
             this.priceBoxB.Size = new System.Drawing.Size(129, 26);
             this.priceBoxB.TabIndex = 2;
             this.priceBoxB.TextChanged += new System.EventHandler(this.priceBoxB_TextChanged);
+            this.priceBoxB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceBox_KeyPress);
             // 
-            // weightBoxB
+            // label4
             // 
-            this.weightBoxB.Font = new System.Drawing.Font("Consolas", 12.10084F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightBoxB.Location = new System.Drawing.Point(66, 83);
-            this.weightBoxB.MaxLength = 13;
-            this.weightBoxB.Name = "weightBoxB";
-            this.weightBoxB.Size = new System.Drawing.Size(129, 26);
-            this.weightBoxB.TabIndex = 3;
-            this.weightBoxB.TextChanged += new System.EventHandler(this.weightBoxB_TextChanged);
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 42);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Price";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Weight";
             // 
             // groupBox2
             // 
@@ -135,24 +160,6 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "B";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Weight";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 42);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Price";
             // 
             // ComparatorForm
             // 
@@ -184,11 +191,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox priceBoxB;
         private System.Windows.Forms.TextBox weightBoxB;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox priceBoxB;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

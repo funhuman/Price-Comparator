@@ -1,8 +1,8 @@
-English | [Chinese](./README.md)
-
 # Price Comparator
 
-## Description
+English | [Chinese](./README.md)
+
+<img src="https://img.shields.io/badge/license-MIT-green.svg" />
 
 A simple price comparison tool.
 
@@ -12,11 +12,16 @@ A simple price comparison tool.
 - Application: Visual Studio 2017
 - Code: C#
 
-## Using
+## Install
 
 Copy this in own computer, using `Visual Studio` open `Comparator.sln`.
 
 Or use program files directly `Comparator\bin\Debug\Comparator.exe`.
+
+## Usage
+
+- Enter the appropriate number in both price weight text boxes.
+- Use the `Enter` key to switch modes.
 
 ## Display
 
@@ -24,4 +29,4 @@ Or use program files directly `Comparator\bin\Debug\Comparator.exe`.
 
 ## License
 
-MIT
+[MIT](LICENSE) © Funhuman
