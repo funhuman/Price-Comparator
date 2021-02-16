@@ -1,6 +1,6 @@
-# Price Comparator
-
 English | [Chinese](./README.md)
+
+# Price Comparator
 
 <img src="https://img.shields.io/badge/license-MIT-green.svg" />
 

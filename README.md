@@ -1,6 +1,6 @@
-# 比价器
-
 [English](./README_en.md) | 汉语
+
+# 比价器
 
 <img src="https://img.shields.io/badge/license-MIT-green.svg" />
 
