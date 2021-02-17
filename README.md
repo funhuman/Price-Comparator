@@ -1,4 +1,4 @@
-[English](./README_en.md) | 汉语
+[English](./README_en.md) | 中文
 
 # 比价器
 

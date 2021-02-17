@@ -1,4 +1,4 @@
-English | [Chinese](./README.md)
+English | [中文](./README.md)
 
 # Price Comparator
 
